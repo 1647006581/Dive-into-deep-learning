@@ -8,10 +8,7 @@
 
 ## 线性模型
 
-        假设n维输入向量
-        $$ 
-        \mathbf{x} = [x_1, x_2, \ldots, x_n]^T 
-        $$
+        假设n维输入向量$ \mathbf{x} = [x_1, x_2, \ldots, x_n]^T $
 
         输出结果为 $\mathbf{y}=w_1 * x_1 + w_2 *x_2 + ...+w_n*x_n + b$    
 
@@ -702,18 +699,17 @@ class Accumulator:
 > $$
 > 
 >     此时计算准确度应该为`0.5`，2个里面对1个，调用`accuracy`函数结果应该为`1`，累加器数据为`0`，此时`zip`合成为
-> 
-> $$
-> \begin{bmatrix}
+
+$$
+\begin{bmatrix}
  0.0 & 0.0 
 \end{bmatrix}
+
 zip
 
 \begin{bmatrix}
 
-
 1 & 2
-
 
 \end{bmatrix}
 
@@ -722,18 +718,17 @@ zip
  0.0 & 0.0 \\
  1 & 2
 \end{bmatrix}
-> $$
-> 
-> 
+$$
+
 > 纵向累加得到
 
-> $$
->  \begin{bmatrix}
+$$
+\begin{bmatrix}
 
- 1 & 2
+1 & 2
 
- \end{bmatrix}
-> $$
+\end{bmatrix}
+$$
 
 >     也就是`metric[0]`为正确数`metric[1]`样本总数。准确率为
 > 
