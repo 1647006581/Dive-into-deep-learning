@@ -8,7 +8,7 @@
 
 ## 线性模型
 
-        假设n维输入向量$ \mathbf{x} = [x_1, x_2, \ldots, x_n]^T $
+        假设n维输入向量\$ \mathbf{x} = [x_1, x_2, \ldots, x_n]^T \$
 
         输出结果为 $\mathbf{y}=w_1 * x_1 + w_2 *x_2 + ...+w_n*x_n + b$    
 
